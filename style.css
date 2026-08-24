@@ -1,0 +1,265 @@
+/* ==================================================
+   CONFIGURAÇÕES GERAIS
+   ================================================== */
+
+/* Remove espaçamentos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rolagem suave ao clicar no menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configurações principais da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* ==================================================
+   CABEÇALHO
+   ================================================== */
+
+header {
+    background-color: #172a3a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 25px;
+
+    /* Mantém o menu visível durante a navegação */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d6e0e8;
+    margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   MENU DE NAVEGAÇÃO
+   ================================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+
+    /* Suaviza a mudança ao passar o mouse */
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav a:hover {
+    background-color: #2f5066;
+}
+
+
+/* ==================================================
+   CONTEÚDO PRINCIPAL
+   ================================================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* Cada seção do portfólio */
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 40px;
+
+    border-radius: 10px;
+
+    /* Sombra suave para destacar cada seção */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Títulos das seções */
+section h2 {
+    color: #172a3a;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+    /* Linha abaixo do título */
+    border-bottom: 2px solid #d9e1e8;
+    padding-bottom: 10px;
+}
+
+
+/* Subtítulos */
+section h3 {
+    color: #2f5066;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+section h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+/* Parágrafos */
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* Listas */
+section ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   LINKS
+   ================================================== */
+
+section a {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #0d3f66;
+}
+
+
+/* ==================================================
+   FORMULÁRIO DE CONTATO
+   ================================================== */
+
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Campos do formulário */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+
+
+/* Campo de mensagem */
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+/* Efeito quando o usuário seleciona um campo */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2f5066;
+    box-shadow: 0 0 4px rgba(47, 80, 102, 0.3);
+}
+
+
+/* Botão */
+button {
+    background-color: #172a3a;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 12px 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #2f5066;
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE
+   ================================================== */
+
+/* Ajustes para celulares e telas pequenas */
+@media (max-width: 600px) {
+
+    header {
+        padding: 25px 15px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 9px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
